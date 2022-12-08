@@ -13,7 +13,7 @@ MaFenetre::MaFenetre() : QWidget()
 void MaFenetre::ouvrirDialogue(string valeur, string ip_recu)
 {
 
-    QString fichier = "/home/ubuntu/nouveauprojetmaiscettefoiscavamarcher/monFichier.txt";
+    QString fichier = "/home/ubuntu/mafenetre/logs.txt";
 
     QFile file(fichier); // Appel du constructeur de la classe QFile
 
@@ -32,6 +32,6 @@ void MaFenetre::ouvrirDialogue(string valeur, string ip_recu)
 }
 void MaFenetre::slotOpenUrl() {
 
-    QDesktopServices::openUrl(QUrl("/home/ubuntu/nouveauprojetmaiscettefoiscavamarcher/monFichier.txt"));
+    QDesktopServices::openUrl(QUrl("/home/ubuntu/mafenetre/logs.txt"));
 
 }
